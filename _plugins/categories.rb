@@ -1,0 +1,76 @@
+require 'json'
+
+module Jekyll
+
+  class QuestionPage < Page
+    def initialize(site, base, dir, pagedef)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = "question-#{pagedef['id']}.html"
+
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'question.html')
+      self.data['title'] = pagedef['title']
+	  self.data['question'] = pagedef['question']
+    end
+  end
+
+  class CategoryPageGenerator < Generator
+    safe true
+
+    def generate(site)
+	  json_filename = site.config['data_product_file'] || 'pages.json'
+      data_hash = site.read_data_object( json_filename ) # if File.exists?( json_filename )
+      # json_mtime = data_hash['mtime'] if data_hash
+      data = data_hash['data'] if data_hash
+      pages = data['Pages'] if data
+      unless pages
+        return "No data found in data file"
+      end
+      puts "## Pages file read: found #{pages.length} pages"
+
+	  pages.each_with_index do |pagedef,index|
+	    puts "## #{pagedef['id']}: #{pagedef['title']} - #{pagedef['question']}"
+		site.pages << QuestionPage.new(site, site.source, "questions", pagedef)
+		# write_product_page( product, products_dir, dest_dir, (index > 0 ) ? products[index-1] : nil, products[index+1], data_mtime ) if product['publish']
+	  end
+	  
+      # if site.layouts.key? 'category_index'
+        # dir = site.config['category_dir'] || 'categories'
+        # site.categories.each_key do |category|
+          # site.pages << QuestionPage.new(site, site.source, File.join(dir, category), category)
+        # end
+      # end
+    end
+  end
+	
+  class Site
+	
+    # Read and parse the JSON file under the data directory
+    # +filename+ is the String name of the file to be read
+    def read_data_object( filename )
+	  puts "Reading..."
+      data_dir = self.config['data_dir'] || '_data'
+      data_path = File.join(self.config['source'], data_dir)
+      if File.symlink?(data_path)
+        return "Data directory '#{data_path}' cannot be a symlink"
+      end
+      file = File.join(data_path, filename)
+
+      return "File #{file} could not be found" if !File.exists?( file )
+
+      result = nil
+      Dir.chdir(data_path) do
+		result = File.read( filename )
+      end
+      puts "## Error: No data in #{file}" if result.nil?
+      # puts result
+
+      result = JSON.parse( result ) if result
+      { 'data' => result,
+        'mtime' => File.mtime(file) }
+    end
+  end
+
+end
