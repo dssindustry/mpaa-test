@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="medium-3 columns">
+    {% if page.styleguide %}{% include styleguide-sidebar.html  %}{% else %}{% include normal-sidebar.html %}{% endif %}
+  </div>
+  <div class="medium-9 columns">
+    {{content}}
+  </div>
+</div>

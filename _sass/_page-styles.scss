@@ -1,0 +1,32 @@
+/****************************************/
+/* SG-Colours
+/****************************************/
+
+.color-block {
+  width: 100%;
+  height: 40px;
+  &.bga-primary-color {
+    background-color: $bga-primary-color;
+  }
+  &.bga-secondary-color {
+    background-color: $bga-secondary-color;
+  }
+  &.bga-topic-color-plan {
+    background-color: $bga-topic-color-plan;
+  }
+  &.bga-topic-color-run {
+    background-color: $bga-topic-color-run;
+  }
+  &.bga-topic-color-exit {
+    background-color: $bga-topic-color-exit;
+  }
+  &.bga-topic-color-events {
+    background-color: $bga-topic-color-events;
+  }
+  &.bga-topic-color-grants {
+    background-color: $bga-topic-color-grants;
+  }
+  &.bga-topic-color-advisory {
+    background-color: $bga-topic-color-advisory;
+  }
+}
