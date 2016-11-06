@@ -1,89 +1,74 @@
 <!doctype html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Business.gov.au Style Guide</title>
-  <meta name="description" content="">
-  
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="{{site.remoteurl}}/areas/business/assets/bundle1.css?v=bAh4RW5QI6lXuVwu482pEY7FtDdUQ0hViD1TdCf3wYU1" rel="stylesheet">
-  <link href="{{site.remoteurl}}/areas/business/assets/bundle2.css?v=spFajRM3ePagzjG49fWhi4nZVmWUBUbU5wklUzVBCxA1" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700">
-  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Help me decide - Business Registration | business.gov.au</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/mpaa/css/style.css">
+	<link rel="stylesheet" href="/mpaa/css/font-awesome.min.css">
+    <meta name="description" content="Australian business registration in one place.">
+    <meta name="application-name" content="Business Registration" />
 </head>
-
 <body>
-  
-  <div id="skip-link">
-    <a class="skip-link SkipToContent" href="#maincontent">skip to content</a>
-    <a class="skip-link SkipToMegaMenu" href="#main-navigation">skip to navigation</a>
-  </div>
-
-  <div class="site-takeover" style="display: block;">
-  </div>
-
-  <header>
-    <nav class="business-navigation-mega">
-    <div class="MegaMenu" role="menubar">
-        <div class="row">
-          <div class="mobile-logo">
-            <a href="{{site.baseurl}}"><strong>business</strong>.gov.au</a> 
-          </div>
-          <a href="{{site.baseurl}}" class="left logo">
-            <img src="{{site.remoteurl}}/areas/Business/Assets/App/header-logo.png" alt="Business.gov.au logo"/>
-          </a>
-          <p>THIS SITE IS IN DRAFT</p>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main id="maincontent" role="main">
-    {{content}}
-  </main>
-  <footer class="hide-on-print">
-        <!-- ~/Areas/Business/Views/Navigation/FooterLinks.cshtml -->
-    <div class="navigation-footer-links">
-      <div class="row">
-      </div>
-    </div>
-
-        <!-- ~/Areas/Business/Views/Navigation/FooterLegal.cshtml -->
-    <div class="navigation-footer-legal">
-      <div class="row">
-        <div class="columns">
-          <ul class="legal">
-            <li class="small-only-12"><a href="#">About</a></li>
-            <li class="small-only-12"><a href="#">For Government</a></li>
-            <li class="small-only-12"><a href="#">Legal notices</a></li>
-            <li class="small-only-12"><a href="/#">Accessibility</a></li>
-            <li class="small-only-12"><a href="#">Other languages</a></li>
-            <li class="small-only-12"><a href="#">13 28 46</a></li>
-            <li class="small-only-12"><a href="#">Contact us</a></li>
-          </ul>
-          <ul class="social">
-            <li><a class="facebook" href="https://www.facebook.com/business.gov.au">
-                <span class="fa fa-facebook-square"></span><span class="label show-for-sr">Facebook</span>
-            </a></li>
-            <li><a class="twitter" href="https://twitter.com/business_gov_au">
-                <span class="fa fa-twitter-square"></span><span class="label show-for-sr">Twitter</span>
-            </a></li>
-            <li><a class="linkedin" href="https://www.linkedin.com/company/department-of-innovation-industry-science-and-research">
-                <span class="fa fa-linkedin-square"></span><span class="label show-for-sr">LinkedIn</span>
-            </a></li>
-            <li><a class="youtube" href="https://www.youtube.com/user/BusinessGovAu">
-                <span class="fa fa-youtube-square"></span><span class="label show-for-sr">Youtube</span>
-            </a></li>
-          </ul>
-          <div class="bga-ftr-logo">
-            <a href="/"><strong>business</strong>.gov.au</a>
-          </div>
-          <a href="/" class="logo">
-            <img src="{{site.remoteurl}}/areas/Business/Assets/App/Images/bga_logo_footer.png" alt="Business.gov.au logo">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+	<div class="top-banner">
+		<div class="mobile-logo"><a href="/"><strong>business</strong>.gov.au</a></div>
+	</div>
+	<header class="wrapper">
+		<div class="sub-brand"><a href="../index.html"><span>MPAA - Home</span></a></div>
+		<div class="gov"><a href="http://www.business.gov.au"><span>business.gov.au</span></a></div>
+	</header>
+	<main class="wrapper">
+		{{ content }}
+	</main>
+	<footer>
+		<div class="navigation-footer-legal">
+			<div class="row">
+				<div class="columns">
+					<ul class="legal">
+						<li class="small-only-12">    <a href="/about">About</a></li>
+						<li class="small-only-12">    <a href="/for-government">For Government</a></li>
+						<li class="small-only-12">    <a href="/legal-notices">Legal notices</a></li>
+						<li class="small-only-12">    <a href="/about/accessibility">Accessibility</a></li>
+						<li class="small-only-12">    <a href="/about/other-languages">Other languages</a></li>
+						<li class="small-only-12">    <a href="/contact-us">Contact us</a></li>
+					</ul>
+					<ul class="social">
+						<li>
+							<a class="facebook" href="https://www.facebook.com/business.gov.au">
+								<span class="fa fa-facebook-square"></span>
+								<span class="label show-for-sr">Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a class="twitter" href="https://twitter.com/business_gov_au">
+								<span class="fa fa-twitter-square"></span>
+								<span class="label show-for-sr">Twitter</span>
+							</a>
+						</li>
+						<li>
+							<a class="linkedin" href="https://www.linkedin.com/company/department-of-innovation-industry-science-and-research">
+								<span class="fa fa-linkedin-square"></span>
+								<span class="label show-for-sr">LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a class="youtube" href="https://www.youtube.com/user/BusinessGovAu">
+								<span class="fa fa-youtube-square"></span>
+								<span class="label show-for-sr">Youtube</span>
+							</a>
+						</li>
+					</ul>
+					<div class="bga-ftr-logo">
+						<a href="/"><strong>business</strong>.gov.au</a>
+					</div>
+					<div class="footer-logo">
+						<a href="https://www.business.gov.au">
+							<span>business.gov.au</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- a href="/web-chat" class="chat-now">Chat Now</a -->
+	</footer>
 </body>

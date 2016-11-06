@@ -13,7 +13,8 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'question.html')
       self.data['title'] = pagedef['title']
 	  self.data['question'] = pagedef['question']
-	  self.data['next'] = pagedef['next']
+	  self.data['next'] = "/mpaa/final.html" if (pagedef['next'] == "final")
+	  self.data['next'] = "question-#{pagedef['next']}.html" if (pagedef['next'] != "final")
     end
   end
 
