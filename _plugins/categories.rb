@@ -8,7 +8,7 @@ module Jekyll
       @base = base
       @dir = dir
       @name = "question-#{pagedef['id']}.html"
-
+zz
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'question.html')
       self.data['title'] = pagedef['title']
