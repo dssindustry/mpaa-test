@@ -5,11 +5,9 @@ module Jekyll
   class QuestionPage < Page
     def initialize(site, base, dir, pagedef)
       @site = site
-      @base = ""
-      @dir = ""
+      @base = base
+      @dir = dir
       @name = "question-#{pagedef['id']}.html"
-	  
-	  puts "## #{@base}, #{@dir}"
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'question.html')
