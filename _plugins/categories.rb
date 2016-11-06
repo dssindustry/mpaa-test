@@ -5,7 +5,7 @@ module Jekyll
   class QuestionPage < Page
     def initialize(site, base, dir, pagedef)
       @site = site
-      @base = site.baseurl
+      @base = ""
       @dir = dir
       @name = "question-#{pagedef['id']}.html"
 	  
