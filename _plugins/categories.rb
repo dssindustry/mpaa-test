@@ -13,6 +13,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'question.html')
       self.data['title'] = pagedef['title']
 	  self.data['question'] = pagedef['question']
+	  self.data['next'] = pagedef['next']
     end
   end
 
