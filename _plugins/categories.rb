@@ -6,7 +6,7 @@ module Jekyll
     def initialize(site, base, dir, pagedef)
       @site = site
       @base = ""
-      @dir = dir
+      @dir = ""
       @name = "question-#{pagedef['id']}.html"
 	  
 	  puts "## #{@base}, #{@dir}"
