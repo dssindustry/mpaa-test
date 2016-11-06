@@ -16,7 +16,7 @@
 title: BGA style guide
 description: > # this means to ignore newlines until "baseurl:"
   Business.gov.au style guide for use across all other sites that use the same branding.
-baseurl: "/mpaa" # the subpath of your site, e.g. /blog
+baseurl: "/mpaa-test" # the subpath of your site, e.g. /blog
 url: "http://dssindustry.github.io/mpaa-test" # the base hostname & protocol for your site, e.g. http://example.com
 remoteurl: "https://www.business.gov.au"
 
