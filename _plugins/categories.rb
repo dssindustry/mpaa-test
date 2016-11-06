@@ -35,15 +35,7 @@ module Jekyll
 	  pages.each_with_index do |pagedef,index|
 	    puts "## #{pagedef['id']}: #{pagedef['title']} - #{pagedef['question']}"
 		site.pages << QuestionPage.new(site, site.source, "questions", pagedef)
-		# write_product_page( product, products_dir, dest_dir, (index > 0 ) ? products[index-1] : nil, products[index+1], data_mtime ) if product['publish']
 	  end
-	  
-      # if site.layouts.key? 'category_index'
-        # dir = site.config['category_dir'] || 'categories'
-        # site.categories.each_key do |category|
-          # site.pages << QuestionPage.new(site, site.source, File.join(dir, category), category)
-        # end
-      # end
     end
   end
 	
