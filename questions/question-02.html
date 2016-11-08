@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/mpaa-test/css/style.css">
 	<link rel="stylesheet" href="/mpaa-test/css/font-awesome.min.css">
 	<script type="text/javascript" src="/mpaa-test/scripts/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/mpaa-test/scripts/functions.js"></script>
     <meta name="description" content="Australian business registration in one place.">
     <meta name="application-name" content="Business Registration" />
 </head>
@@ -20,6 +21,7 @@
 	</header>
 	<main class="wrapper">
 		<script type="text/javascript" src="/mpaa-test/scripts/track.js"></script>
+<script type="text/javascript" src="/mpaa-test/scripts/jquery.collapse-help-me-decide.js"></script>
 <script>
 	var pageID = 2;
 	var next = "question-03.html";
@@ -27,26 +29,30 @@
 <div class="row">
   <h2>Question 2</h2>
   <div class="grid-row">
-	<div class="col12 last">
-		<fieldset>
-			<legend>Will your project involve capital expenditure over AUD $500 million?</legend>
-			<div class="radio-toggle col11">
-				<label class="label-left" for="answer-yes">
-					<input id="answer-yes" type="radio" value="336" name="answer">
-					<span>Yes</span>
-				</label>
-				<label class="label-right" for="answer-no">
-					<input id="answer-no" type="radio" value="337" name="answer">
-					<span>No </span>
-				</label>
-			</div>
-		</fieldset>
-	</div>
+	<fieldset>
+		<legend class="col6">Will your project involve capital expenditure over AUD $500 million?</legend>
+		<div class="radio-toggle col5">
+			<label class="label-left" for="answer-yes">
+				<input id="answer-yes" type="radio" value="336" name="answer">
+				<span>Yes</span>
+			</label>
+			<label class="label-right" for="answer-no">
+				<input id="answer-no" type="radio" value="337" name="answer">
+				<span>No </span>
+			</label>
+		</div>
+		<div class="col1 last">
+			<a href="#help-anchor" id="helplink" class="cd-btn help"><span>help</span></a>
+		</div>
+	</fieldset>
   </div>
   
   <div id="summary" class="grid-row" style="display: none;">
 	<div class="registration-tip">
-		<p>All major projects with capital expenditure of AUD $500 million or more require the preparation of an Australian Industry Participation Plan under Australian Jobs Act 2013. The Plan outlines how the project will provide Australian businesses with full, fair and reasonable opportunity to supply goods and services.</p><p>State and Territories have their own jurisdictional Industry Participation Plans for projects of AUD $20 million.</p><p>For more information, see the <a href="#">MPAA Factsheet: Australian Jobs Act 2013</a></p>
+		<p>All major projects with capital expenditure of AUD $500 million or more require the preparation of an Australian Industry Participation Plan under Australian Jobs Act 2013. The Plan outlines how the project will provide Australian businesses with full, fair and reasonable opportunity to supply goods and services.</p><p>State and Territories have their own jurisdictional Industry Participation Plans for projects of AUD $20 million.</p>
+		
+			<p>For more information, see the <a href="/mpaa-test/pdf/dummy.pdf">MPAA Factsheet: </a></p>
+		
 	</div>
   </div>
   
@@ -55,6 +61,26 @@
 			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();">Next</button>
 		</div><!-- controls-content -->
 	</div>
+  
+  <div class="help" id="help">
+	<div class="cd-panel from-right">
+		<div class="cd-panel-header">
+			<a href="#" class="cd-panel-close">Close</a>
+			<h2 id="helpTopic">Help topics</h2>
+			<p class="cd-panel-print"><a href="#" id="aPrint" onclick="printHelp(); return false;">Print</a></p>
+		</div>
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<div id="helpFile" class="showhide">
+					<input type="hidden" class="help-anchor" id="help-anchor" />
+					<h3>Capital expenditure</h3>
+					<div><p>Capital expenditure refers to expenditure to acquire, construct or upgrade fixed assets such as land, buildings and equipment.</p></div>
+				</div><!-- showhide -->
+			</div><!-- cd-panel-content -->
+		</div><!-- cd-panel-container -->
+	</div><!-- cd-panel -->
+  </div>
+  
 </div>
 	</main>
 	<footer>
