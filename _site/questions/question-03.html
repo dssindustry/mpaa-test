@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/mpaa-test/css/style.css">
 	<link rel="stylesheet" href="/mpaa-test/css/font-awesome.min.css">
+	<script type="text/javascript" src="/mpaa-test/scripts/jquery-3.1.1.min.js"></script>
     <meta name="description" content="Australian business registration in one place.">
     <meta name="application-name" content="Business Registration" />
 </head>
@@ -14,11 +15,16 @@
 		<div class="mobile-logo"><a href="/"><strong>business</strong>.gov.au</a></div>
 	</div>
 	<header class="wrapper">
-		<div class="sub-brand"><a href="../index.html"><span>MPAA - Home</span></a></div>
+		<div class="sub-brand"><a href="/mpaa-test/index.html"><span>MPAA - Home</span></a></div>
 		<div class="gov"><a href="http://www.business.gov.au"><span>business.gov.au</span></a></div>
 	</header>
 	<main class="wrapper">
-		<div class="row">
+		<script type="text/javascript" src="/mpaa-test/scripts/track.js"></script>
+<script>
+	var pageID = 3;
+	var next = "question-04.html";
+</script>
+<div class="row">
   <h2>Question 3</h2>
   <div class="grid-row">
 	<div class="col12 last">
@@ -36,14 +42,20 @@
 			</div>
 		</fieldset>
 	</div>
-	<div class="controls-container">
-		<div class="controls-content">
-			<button type="button" class="btn btn-default" id="btnContinue" onclick="location.href='question-04.html'">Next</button>
-		</div><!-- controls-content -->
+  </div>
+  
+  <div id="summary" class="grid-row" style="display: none;">
+	<div class="registration-tip">
+		<p>All foreign workers require the appropriate visa that allows them to work in Australia and in Commonwealth waters under the Migration Act 1958.</p><p>For more information, see the <a href="#">MPAA Factsheet: Migration Act 1958</a></p>
 	</div>
   </div>
+  
+	<div class="controls-container">
+		<div class="controls-content">
+			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();">Next</button>
+		</div><!-- controls-content -->
+	</div>
 </div>
-
 	</main>
 	<footer>
 		<div class="navigation-footer-legal">
