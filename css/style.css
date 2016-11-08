@@ -403,7 +403,7 @@ a:active {
 
 a.external-link {
   padding-right: 18px;
-  background-image: url(../img/ico-external.png);
+  background-image: url(../images/ico-external.png);
   background-repeat: no-repeat;
   background-position: right center; }
 
@@ -513,7 +513,7 @@ caption span {
   font-size: 70%; }
 
 caption span.alert {
-  background: transparent url(../img/ico-alert-small.png) no-repeat 0 0;
+  background: transparent url(../images/ico-alert-small.png) no-repeat 0 0;
   padding: 1px 0 3px 30px; }
 
 caption span button {
@@ -818,7 +818,7 @@ footer {
     footer .navigation-footer-legal .footer-logo {
       display: none; }
       footer .navigation-footer-legal .footer-logo a, footer .navigation-footer-legal .footer-logo a:link, footer .navigation-footer-legal .footer-logo a:visited {
-        background: transparent url(../img/bga_logo_footer.png) no-repeat 0 0;
+        background: transparent url(../images/bga_logo_footer.png) no-repeat 0 0;
         display: block;
         width: 60%;
         min-width: 265px;
@@ -983,7 +983,7 @@ footer {
   padding-top: 1em; }
 
 .registration-tip {
-  background: #efe8ce url(../img/ico-tip-26.png) no-repeat 1em 1em;
+  background: #efe8ce url(../images/ico-tip-26.png) no-repeat 1em 1em;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   padding: 0.1em 2em 0.25em 3em;
@@ -1023,7 +1023,7 @@ footer {
   width: 100%; }
 
 h2.cart-heading {
-  background: transparent url(../img/bg-fade-up.png) repeat-x 0 100%;
+  background: transparent url(../images/bg-fade-up.png) repeat-x 0 100%;
   padding-bottom: 1em;
   margin: 0;
   font-size: 140%; }
@@ -1052,7 +1052,7 @@ h2.cart-heading {
   text-align: right;
   width: 100%;
   padding-right: 1em;
-  background: transparent url(../img/bg-fade-down.png) repeat-x 0 0; }
+  background: transparent url(../images/bg-fade-down.png) repeat-x 0 0; }
   .cell-total p strong {
     font-weight: bold;
     font-family: open_sansregular, helvetica, arial, sans-serif; }
@@ -1120,13 +1120,13 @@ h2.cart-heading {
     width: 1px; }
 
 .remove {
-  background-image: url(../img/sprite-trash.png); }
+  background-image: url(../images/sprite-trash.png); }
 
 .edit {
-  background-image: url(../img/sprite-edit.png); }
+  background-image: url(../images/sprite-edit.png); }
 
 .close {
-  background-image: url(../img/sprite-close-black.png); }
+  background-image: url(../images/sprite-close-black.png); }
 
 .subtotal {
   font-weight: bold;
@@ -1160,7 +1160,7 @@ main.confirmation .result-container {
   background-color: #3179b5;
   padding: 1em; }
   .dashboard-message h1 {
-    background: transparent url(../img/ico-chat.png) no-repeat 0 0;
+    background: transparent url(../images/ico-chat.png) no-repeat 0 0;
     font-size: 150%;
     margin: 0;
     padding: 5px 0 5px 50px; }
@@ -1201,16 +1201,16 @@ main.confirmation .result-container {
   .dashboard-container .status-information {
     width: 30%; }
   .dashboard-container .registered {
-    background: white url(../img/sprite-registration-status.png) no-repeat 1em 10px;
+    background: white url(../images/sprite-registration-status.png) no-repeat 1em 10px;
     padding-left: 57px; }
   .dashboard-container .waiting {
-    background: white url(../img/sprite-registration-status.png) no-repeat 1em -100px;
+    background: white url(../images/sprite-registration-status.png) no-repeat 1em -100px;
     padding-left: 57px; }
   .dashboard-container .declined {
-    background: white url(../img/sprite-registration-status.png) no-repeat 1em -212px;
+    background: white url(../images/sprite-registration-status.png) no-repeat 1em -212px;
     padding-left: 57px; }
   .dashboard-container .editing {
-    background: white url(../img/sprite-registration-status.png) no-repeat 1em -324px;
+    background: white url(../images/sprite-registration-status.png) no-repeat 1em -324px;
     padding-left: 57px; }
 
 /* Dashboard pagination. Inherits cart-container table layout */
@@ -1267,7 +1267,7 @@ main.confirmation .result-container {
 .sub-section-container h2 {
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  background: #e4e5e5 url(../img/sprite-sections.png) no-repeat 0 -7px;
+  background: #e4e5e5 url(../images/sprite-sections.png) no-repeat 0 -7px;
   padding: 0.4em 0.5em 0.4em 60px;
   font-size: 1.5rem;
   -webkit-border-radius: 6px;
@@ -1281,10 +1281,10 @@ main.confirmation .result-container {
   display: block; }
 
 .sub-section-open h2 {
-  background: #e4e5e5 url(../img/sprite-sections.png) no-repeat 0 -105px; }
+  background: #e4e5e5 url(../images/sprite-sections.png) no-repeat 0 -105px; }
 
 .sub-section-done h2 {
-  background: #e4e5e5 url(../img/sprite-sections.png) no-repeat 0 -197px; }
+  background: #e4e5e5 url(../images/sprite-sections.png) no-repeat 0 -197px; }
 
 .sub-section-container .result-container h2,
 .cart-container h2,
@@ -1595,34 +1595,34 @@ select[disabled]:active {
 
 /* Add individual and organisation buttons */
 .btn-individual {
-  background: transparent url(../img/sprite-add-individual.png) no-repeat 11px 14px;
+  background: transparent url(../images/sprite-add-individual.png) no-repeat 11px 14px;
   margin: 0 0 0 0.5em;
   padding: 1em 1.5em 1em 2.5em; }
 
 .btn-individual:hover,
 .btn-individual:focus,
 .btn-individual:active {
-  background: black url(../img/sprite-add-individual.png) no-repeat 11px -146px; }
+  background: black url(../images/sprite-add-individual.png) no-repeat 11px -146px; }
 
 .btn-organisation {
-  background: transparent url(../img/sprite-add-organisation.png) no-repeat 11px 14px;
+  background: transparent url(../images/sprite-add-organisation.png) no-repeat 11px 14px;
   margin: 0 0 0 0.5em;
   padding: 1em 1.5em 1em 2.5em; }
 
 .btn-organisation:hover,
 .btn-organisation:focus,
 .btn-organisation:active {
-  background: black url(../img/sprite-add-organisation.png) no-repeat 11px -146px; }
+  background: black url(../images/sprite-add-organisation.png) no-repeat 11px -146px; }
 
 .btn-unincorp {
-  background: transparent url(../img/sprite-add-unincorp.png) no-repeat 11px 14px;
+  background: transparent url(../images/sprite-add-unincorp.png) no-repeat 11px 14px;
   margin: 0 0 0 0.5em;
   padding: 1em 1.5em 1em 2.5em; }
 
 .btn-unincorp:hover,
 .btn-unincorp:focus,
 .btn-unincorp:active {
-  background: black url(../img/sprite-add-unincorp.png) no-repeat 11px -146px; }
+  background: black url(../images/sprite-add-unincorp.png) no-repeat 11px -146px; }
 
 /* Custom added button with less padding */
 .btn-added {
@@ -1634,7 +1634,7 @@ select[disabled]:active {
 
 /* Custom remove button with cross icon */
 .btn-remove {
-  background: #eeeeee url(../img/sprite-remove.png) no-repeat 50% 0;
+  background: #eeeeee url(../images/sprite-remove.png) no-repeat 50% 0;
   border: 1px solid #cccccc;
   font-weight: normal;
   min-height: 38px;
@@ -1643,7 +1643,7 @@ select[disabled]:active {
 .btn-remove:hover,
 .btn-remove:focus,
 .btn-remove:active {
-  background: black url(../img/sprite-remove.png) no-repeat 50% -281px; }
+  background: black url(../images/sprite-remove.png) no-repeat 50% -281px; }
 
 .form-row {
   clear: both;
@@ -1778,7 +1778,7 @@ input[type=file] {
       padding-left: 31px;
       height: 100%;
       color: #fff;
-      background: url(../img/upload.png) no-repeat 5px center, linear-gradient(to bottom, #4f8fe6 0%, #367ab3 100%);
+      background: url(../images/upload.png) no-repeat 5px center, linear-gradient(to bottom, #4f8fe6 0%, #367ab3 100%);
       display: inline-block; }
   .custom-controls input[type=file].compact + label span {
     min-height: 1.4em; }
@@ -1790,11 +1790,11 @@ input[type=file] {
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
     border-color: #666; }
     .custom-controls input[type=file]:focus + label strong, .custom-controls input[type=file] + label:hover strong, .custom-controls input[type=file].has-focus + label strong {
-      background: #000 url(../img/upload.png) no-repeat 5px center; }
+      background: #000 url(../images/upload.png) no-repeat 5px center; }
   .custom-controls input[type=file]:disabled + label {
     background-color: #ebebe4; }
     .custom-controls input[type=file]:disabled + label strong {
-      background: #888 url(../img/upload.png) no-repeat 5px center; }
+      background: #888 url(../images/upload.png) no-repeat 5px center; }
   @media screen and (min-width: 768px) and (max-width: 960px) {
     .col6 .custom-controls input[type=file] + label span {
       min-height: 1.4em; }
@@ -1849,7 +1849,7 @@ input[type=file] {
   width: 48px;
   padding: 0 0 40px 0;
   margin: 0.2em 0;
-  background-image: url(../img/sprite-form-elements.png);
+  background-image: url(../images/sprite-form-elements.png);
   background-repeat: no-repeat; }
 
 .checkboxes label:hover {
@@ -2101,12 +2101,12 @@ div.radio-toggle.stacked.full-width label {
 
 /* Adding dollar symbol to input field */
 .input-dollar {
-  background: transparent url(../img/ico-dollar.png) no-repeat 0 50%;
+  background: transparent url(../images/ico-dollar.png) no-repeat 0 50%;
   padding-left: 45px;
   width: 100%; }
 
 .input-percent {
-  background: transparent url(../img/ico-percent.png) no-repeat 100% 50%;
+  background: transparent url(../images/ico-percent.png) no-repeat 100% 50%;
   padding-right: 30px;
   text-align: right;
   width: 35px !important; }
@@ -2161,7 +2161,7 @@ div.radio-toggle.stacked.full-width label {
       top: 3px;
       left: 3px;
       content: '';
-      background: url(/mpaa/images/sprite-custom-controls.png) 0 0 no-repeat;
+      background: url(/mpaa-test/images/sprite-custom-controls.png) 0 0 no-repeat;
       width: 40px;
       height: 40px;
       cursor: pointer; }
@@ -2230,7 +2230,7 @@ ul.section-nav, ul.section-nav-4, ul.section-nav-5 {
   position: absolute;
   width: 100%; }
   ul.section-nav li, ul.section-nav-4 li, ul.section-nav-5 li {
-    background: transparent url(../img/sprite-steps.png) no-repeat 50% 5px;
+    background: transparent url(../images/sprite-steps.png) no-repeat 50% 5px;
     display: inline-block;
     line-height: 1.2em;
     padding: 0;
@@ -2240,12 +2240,12 @@ ul.section-nav, ul.section-nav-4, ul.section-nav-5 {
     min-height: 60px;
     z-index: 10; }
     ul.section-nav li.done, ul.section-nav-4 li.done, ul.section-nav-5 li.done {
-      background: transparent url(../img/sprite-steps.png) no-repeat 50% -498px; }
+      background: transparent url(../images/sprite-steps.png) no-repeat 50% -498px; }
     ul.section-nav li.active, ul.section-nav-4 li.active, ul.section-nav-5 li.active {
-      background: transparent url(../img/sprite-steps.png) no-repeat 50% -250px;
+      background: transparent url(../images/sprite-steps.png) no-repeat 50% -250px;
       font-weight: bold; }
     ul.section-nav li.alert, ul.section-nav-4 li.alert, ul.section-nav-5 li.alert {
-      background: transparent url(../img/sprite-steps.png) no-repeat 50% -750px; }
+      background: transparent url(../images/sprite-steps.png) no-repeat 50% -750px; }
     ul.section-nav li span, ul.section-nav-4 li span, ul.section-nav-5 li span {
       color: white;
       font-family: open_sansregular, helvetica, arial, sans-serif;
@@ -2591,7 +2591,7 @@ img.visuallyhidden {
     vertical-align: middle; }
 
 button.closeSystemMessage {
-  background: white url(../img/sprite-close.png) no-repeat 7px 8px;
+  background: white url(../images/sprite-close.png) no-repeat 7px 8px;
   color: #3179b5;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -2601,12 +2601,12 @@ button.closeSystemMessage {
   display: inline-block;
   padding: 14px 12px 16px 54px; }
   button.closeSystemMessage:hover, button.closeSystemMessage:focus, button.closeSystemMessage:active {
-    background: black url(../img/sprite-close.png) no-repeat 7px -105px;
+    background: black url(../images/sprite-close.png) no-repeat 7px -105px;
     color: white; }
 
 @media only screen and (min-width: 768px) {
   .system-message {
-    background: #175386 url(../img/ico-chat.png) no-repeat 1.5em 0.8em; }
+    background: #175386 url(../images/ico-chat.png) no-repeat 1.5em 0.8em; }
     .system-message h1 {
       margin: 0 0 1em 1.75em; }
 
@@ -2663,7 +2663,7 @@ button.closeSystemMessage {
   display: none; }
   @media only screen and (min-width: 768px) {
     .print a, .print a:link, .print a:visited {
-      background: transparent url(../img/sprite-print.png) no-repeat 7px 5px;
+      background: transparent url(../images/sprite-print.png) no-repeat 7px 5px;
       display: inline-block;
       -moz-border-radius: 6px;
       -webkit-border-radius: 6px;
@@ -2672,7 +2672,7 @@ button.closeSystemMessage {
       padding: 8px 7px 15px 53px;
       margin-top: -90px; } }
 .print a:hover, .print a:active, .print a:focus {
-  background: black url(../img/sprite-print.png) no-repeat 7px -108px; }
+  background: black url(../images/sprite-print.png) no-repeat 7px -108px; }
 
 .video-container,
 .iframe-container {
@@ -2767,15 +2767,15 @@ button.closeSystemMessage {
     -moz-transition: top 0.3s 0.3s;
     transition: top 0.3s 0.3s; }
   .cd-panel-header a, .cd-panel-header a:link, .cd-panel-header a:visited {
-    background: black url(../img/sprite-close.png) no-repeat 100% 10px;
+    background: black url(../images/sprite-close.png) no-repeat 100% 10px;
     color: white;
     padding-right: 60px;
     text-decoration: none;
     text-align: right; }
   .cd-panel-header a:hover, .cd-panel-header a:active, .cd-panel-header a:focus {
-    background: black url(../img/sprite-close.png) no-repeat 100% -102px; }
+    background: black url(../images/sprite-close.png) no-repeat 100% -102px; }
   .cd-panel-header h2 {
-    background: #367ab3 url(../img/ico-help-form.png) no-repeat 0 0;
+    background: #367ab3 url(../images/ico-help-form.png) no-repeat 0 0;
     padding-left: 30px;
     color: white;
     font-size: 140%;
@@ -2835,7 +2835,7 @@ button.closeSystemMessage {
     transform: rotate(135deg); }
 
 .cd-panel-print a, .cd-panel-print a:link, .cd-panel-print a:visited {
-  background: transparent url(../img/sprite-print.png) no-repeat 100% 12px;
+  background: transparent url(../images/sprite-print.png) no-repeat 100% 12px;
   color: white;
   padding-right: 60px;
   text-decoration: none;
@@ -2844,7 +2844,7 @@ button.closeSystemMessage {
   right: 0;
   top: 55px; }
 .cd-panel-print a:hover, .cd-panel-print a:active, .cd-panel-print a:focus {
-  background: transparent url(../img/sprite-print.png) no-repeat 100% -100px; }
+  background: transparent url(../images/sprite-print.png) no-repeat 100% -100px; }
 
 .cd-panel-container {
   position: fixed;
@@ -2910,20 +2910,20 @@ button.closeSystemMessage {
     margin: 0;
     line-height: 1.4em; }
     .showhide h3 a, .showhide h3 a:link, .showhide h3 a:visited {
-      background: transparent url("../img/sprite-expand-collapse.png") 8px 17px no-repeat;
+      background: transparent url("../images/sprite-expand-collapse.png") 8px 17px no-repeat;
       color: #367ab3;
       display: block;
       padding: 0.75em 0 0.75em 2.5em;
       margin: 0;
       text-decoration: none; }
     .showhide h3 a:hover, .showhide h3 a:focus, .showhide h3 a:active {
-      background: black url("../img/sprite-expand-collapse.png") 8px -112px no-repeat;
+      background: black url("../images/sprite-expand-collapse.png") 8px -112px no-repeat;
       color: white; }
     .showhide h3.open a, .showhide h3.open a:link, .showhide h3.open a:visited {
-      background: #0B5394 url("../img/sprite-expand-collapse.png") 8px -240px no-repeat;
+      background: #0B5394 url("../images/sprite-expand-collapse.png") 8px -240px no-repeat;
       color: white; }
     .showhide h3.open a:hover, .showhide h3.open a:focus, .showhide h3.open a:active {
-      background: black url("../img/sprite-expand-collapse.png") 8px -370px no-repeat;
+      background: black url("../images/sprite-expand-collapse.png") 8px -370px no-repeat;
       color: white; }
     .showhide h3 + div {
       padding: 0em 0em 0.5em 0em;
@@ -2937,7 +2937,7 @@ button.closeSystemMessage {
 
 /* help-icon styles with hover state */
 a.help {
-  background-image: url(../img/sprite-info.png);
+  background-image: url(../images/sprite-info.png);
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2996,7 +2996,7 @@ td.help a.cd-btn:focus,
 .nav-item > a {
   /* open state of first descendant link within a top level navigation item */ }
   .nav-item > a, .nav-item > a:link, .nav-item > a:visited {
-    background: transparent url(../img/ico-account.png) no-repeat 8px 0;
+    background: transparent url(../images/ico-account.png) no-repeat 8px 0;
     -webkit-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
     position: relative;
@@ -3009,7 +3009,7 @@ td.help a.cd-btn:focus,
     color: #3179b5; }
     @media only screen and (min-width: 640px) {
       .nav-item > a, .nav-item > a:link, .nav-item > a:visited {
-        background: transparent url(../img/ico-account.png) no-repeat 12px 8px;
+        background: transparent url(../images/ico-account.png) no-repeat 12px 8px;
         padding: 0.5em 0.5em 0.5em 48px; } }
   .nav-item > a:hover, .nav-item > a:focus, .nav-item > a:active {
     background-color: transparent;
