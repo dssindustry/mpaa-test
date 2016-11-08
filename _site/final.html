@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/mpaa-test/css/style.css">
 	<link rel="stylesheet" href="/mpaa-test/css/font-awesome.min.css">
 	<script type="text/javascript" src="/mpaa-test/scripts/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/mpaa-test/scripts/functions.js"></script>
     <meta name="description" content="Australian business registration in one place.">
     <meta name="application-name" content="Business Registration" />
 </head>
@@ -20,7 +21,9 @@
 	</header>
 	<main class="wrapper">
 		<div class="row">
-  	<h1 id="heading" tabindex="-1">MPAA summary</h1>
+  <script type="text/javascript" src="/mpaa-test/scripts/summary.js"></script>
+<script type="text/javascript" src="/mpaa-test/scripts/jquery.collapse-help-me-decide.js"></script>
+	<h1 id="heading" tabindex="-1">MPAA summary</h1>
 	<p class="meter-description"><strong>Step <span id="stepNo">6</span>:</strong> <span id="percentCompleted">100</span>% complete</p>
 	<div class="meter">
 		<span id="percentMeter" style="width: 100%;"></span>
@@ -52,12 +55,29 @@
 
 </div>
 
-					<div class="controls-container">
-						<div class="controls-content">
-							<button type="button" id="previous" class="btn">Previous</button>
-							<button type="button" id="next" class="btn btn-default">Start applying</button>
-						</div><!-- controls-content -->
-					</div>
+<div class="controls-container">
+	<div class="controls-content">
+		<button type="button" id="previous" class="btn">Previous</button>
+		<button type="button" id="next" class="btn btn-default">Start applying</button>
+	</div><!-- controls-content -->
+</div>
+
+ <div class="help" id="help">
+	<div class="cd-panel from-right">
+		<div class="cd-panel-header">
+			<a href="#" class="cd-panel-close">Close</a>
+			<h2 id="helpTopic">Help topics</h2>
+			<p class="cd-panel-print"><a href="#" id="aPrint" onclick="printHelp(); return false;">Print</a></p>
+		</div>
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<div id="helpFile" class="showhide">
+				
+				</div><!-- showhide -->
+			</div><!-- cd-panel-content -->
+		</div><!-- cd-panel-container -->
+	</div><!-- cd-panel -->
+  </div>
 
 </div>
 
