@@ -25,7 +25,7 @@ ul.section-nav, ul.section-nav-4, ul.section-nav-5 {
 	width: 100%;
 
 	li {
-		background: transparent url(../img/sprite-steps.png) no-repeat 50% 5px;
+		background: transparent url(../images/sprite-steps.png) no-repeat 50% 5px;
 		display: inline-block;
 		line-height: 1.2em;
 		padding: 0;
@@ -36,16 +36,16 @@ ul.section-nav, ul.section-nav-4, ul.section-nav-5 {
 		z-index: 10;
 
 		&.done {
-			background: transparent url(../img/sprite-steps.png) no-repeat 50% -498px; 
+			background: transparent url(../images/sprite-steps.png) no-repeat 50% -498px; 
 		}
 
 		&.active {
-			background: transparent url(../img/sprite-steps.png) no-repeat 50% -250px;  
+			background: transparent url(../images/sprite-steps.png) no-repeat 50% -250px;  
 			font-weight: bold;
 		}
 		
 		&.alert {
-			background: transparent url(../img/sprite-steps.png) no-repeat 50% -750px;  
+			background: transparent url(../images/sprite-steps.png) no-repeat 50% -750px;  
 		}
 
 		span {
@@ -463,7 +463,7 @@ img.visuallyhidden {
 }
 
 button.closeSystemMessage {
-	background: white url(../img/sprite-close.png) no-repeat 7px 8px;
+	background: white url(../images/sprite-close.png) no-repeat 7px 8px;
 	color: $brand-blue;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -474,14 +474,14 @@ button.closeSystemMessage {
 	padding: 14px 12px 16px 54px;
 
 	&:hover, &:focus, &:active {
-		background: $brand-hover-bg url(../img/sprite-close.png) no-repeat 7px -105px;
+		background: $brand-hover-bg url(../images/sprite-close.png) no-repeat 7px -105px;
 		color: $brand-hover-fg;
 	}
 }
 
 @media only screen and (min-width: $break-medium) {
 	.system-message {
-		background: $system-message url(../img/ico-chat.png) no-repeat 1.5em 0.8em;
+		background: $system-message url(../images/ico-chat.png) no-repeat 1.5em 0.8em;
 		
 		h1 {
 			margin: 0 0 1em 1.75em;
@@ -577,7 +577,7 @@ button.closeSystemMessage {
 		display: none;
 
 		@media only screen and (min-width: $break-medium) {
-			background: transparent url(../img/sprite-print.png) no-repeat 7px 5px;
+			background: transparent url(../images/sprite-print.png) no-repeat 7px 5px;
 			display: inline-block;
 			-moz-border-radius: 6px;
 			-webkit-border-radius: 6px;
@@ -589,7 +589,7 @@ button.closeSystemMessage {
 	}
 
 	a:hover, a:active, a:focus {
-		background: black url(../img/sprite-print.png) no-repeat 7px -108px;
+		background: black url(../images/sprite-print.png) no-repeat 7px -108px;
 	}
 }
 
@@ -719,7 +719,7 @@ button.closeSystemMessage {
 	}
 
 	a, a:link, a:visited {
-		background: black url(../img/sprite-close.png) no-repeat 100% 10px;
+		background: black url(../images/sprite-close.png) no-repeat 100% 10px;
 		color: white;
 		padding-right: 60px;
 		text-decoration: none;
@@ -727,11 +727,11 @@ button.closeSystemMessage {
 	}
 
 	a:hover, a:active, a:focus {
-        background: black url(../img/sprite-close.png) no-repeat 100% -102px;
+        background: black url(../images/sprite-close.png) no-repeat 100% -102px;
     }
 	
 	h2 {
-		background: #367ab3 url(../img/ico-help-form.png) no-repeat 0 0;
+		background: #367ab3 url(../images/ico-help-form.png) no-repeat 0 0;
 		padding-left: 30px;
 		color: white;
 		font-size: 140%;
@@ -812,7 +812,7 @@ button.closeSystemMessage {
 .cd-panel-print {
 
 	a, a:link, a:visited {
-		background: transparent url(../img/sprite-print.png) no-repeat 100% 12px;
+		background: transparent url(../images/sprite-print.png) no-repeat 100% 12px;
 		color: white;
 		padding-right: 60px;
 		text-decoration: none;
@@ -823,7 +823,7 @@ button.closeSystemMessage {
 	}
 
     a:hover, a:active, a:focus {
-        background: transparent url(../img/sprite-print.png) no-repeat 100% -100px;
+        background: transparent url(../images/sprite-print.png) no-repeat 100% -100px;
     }
 }
 
@@ -903,7 +903,7 @@ button.closeSystemMessage {
 		line-height: 1.4em;
 
 		a, a:link, a:visited {
-			background: transparent url("../img/sprite-expand-collapse.png") 8px 17px no-repeat;
+			background: transparent url("../images/sprite-expand-collapse.png") 8px 17px no-repeat;
 			color: #367ab3;
 			display: block;
 			padding: 0.75em 0 0.75em 2.5em;
@@ -912,19 +912,19 @@ button.closeSystemMessage {
 		}
 
 		a:hover, a:focus, a:active {
-			background: black url("../img/sprite-expand-collapse.png") 8px -112px no-repeat;
+			background: black url("../images/sprite-expand-collapse.png") 8px -112px no-repeat;
 			color: white;
 		}
 		
 		&.open {
 		
 			a, a:link, a:visited {
-				background: #0B5394 url("../img/sprite-expand-collapse.png") 8px -240px no-repeat;
+				background: #0B5394 url("../images/sprite-expand-collapse.png") 8px -240px no-repeat;
 				color: white;
 			}
 
 			a:hover, a:focus, a:active {
-				background: black url("../img/sprite-expand-collapse.png") 8px -370px no-repeat;
+				background: black url("../images/sprite-expand-collapse.png") 8px -370px no-repeat;
 				color: white;
 			}
 		}
@@ -945,7 +945,7 @@ button.closeSystemMessage {
 
 /* help-icon styles with hover state */
 a.help {
-	background-image: url(../img/sprite-info.png);
+	background-image: url(../images/sprite-info.png);
 	background-color: transparent;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1031,7 +1031,7 @@ td.help a.cd-btn:focus,
 	> a {
 
 		&, &:link, &:visited {
-			background: transparent url(../img/ico-account.png) no-repeat 8px 0;
+			background: transparent url(../images/ico-account.png) no-repeat 8px 0;
 			-webkit-border-radius: 5px 5px 0 0;
 			border-radius: 5px 5px 0 0;
 			position: relative;
@@ -1044,7 +1044,7 @@ td.help a.cd-btn:focus,
 			color: $brand-blue;
 
 			@media only screen and (min-width: $banner-break) {
-				background: transparent url(../img/ico-account.png) no-repeat 12px 8px;
+				background: transparent url(../images/ico-account.png) no-repeat 12px 8px;
 				padding: 0.5em 0.5em 0.5em 48px;
 			}
 		}
