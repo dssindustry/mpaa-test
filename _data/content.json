@@ -1,0 +1,42 @@
+{ "Content": [
+	{
+		"id": 1,
+		"helpTitle": "Foreign investors",
+		"helpContent": "<p>A foreign investor is:</p><ul><li>an individual not ordinarily resident in Australia</li><li>a company or trust not ordinarily resident in Australia</li><li>a foreign government</li></ul>",
+		"summary": "<p>Indigenous Australians can apply for a declaration under the Aboriginal and Torres Strait Islander Heritage Protection Act 1984 to protect significant Indigenous areas and objects. Declarations are rarely made but can override project approvals.</p><p>State and Territories may also have their own jurisdictional Indigenous Heritage regulations.</p>",
+		"pdf": "dummy.pdf",
+		"pdfDescription": "<em>The Aboriginal & Torres Strait Islander Heritage Protection Act 1984.</em>"
+	},
+	{
+		"id": 2,
+		"helpTitle": "Capital expenditure",
+		"helpContent": "<p>Capital expenditure refers to expenditure to acquire, construct or upgrade fixed assets such as land, buildings and equipment.</p>",
+		"summary": "<p>All major projects with capital expenditure of AUD $500 million or more require the preparation of an Australian Industry Participation Plan under Australian Jobs Act 2013. The Plan outlines how the project will provide Australian businesses with full, fair and reasonable opportunity to supply goods and services.</p><p>State and Territories have their own jurisdictional Industry Participation Plans for projects of AUD $20 million.</p>",
+		"pdf": "dummy.pdf",
+		"pdfDescription": "<em>Australian Jobs Act 2013</em>"
+	},
+	{
+		"id": 3,
+		"helpTitle": "Foreign workers",
+		"helpContent": "<p>Foreign workers are employees from another country without:</p><ul><li>Australian citizenship</li><li>New Zealand citizenship</li><li>Australian permanent residence</li></ul>",
+		"summary": "<p>All foreign workers require the appropriate visa that allows them to work in Australia and in Commonwealth waters under the Migration Act 1958.</p>",
+		"pdf": "dummy.pdf",
+		"pdfDescription": "<em>Migration Act 1958</em>"
+	},
+	{
+		"id": 4,
+		"helpTitle": "Native title",
+		"helpContent": "<p>You can check if your area is affected by Native Title on the <a href=\"http://www.nntt.gov.au/searchRegApps/Pages/default.aspx\">Online Register</a>.</p>",
+		"summary": "<p>Activity on areas held by Native Title require approvals through negotiations with the affected title holders under the Native Title Act 1993.</p>",
+		"pdf": "dummy.pdf",
+		"pdfDescription": "<em>Native Title Act 1993</em>"
+	},
+	{
+		"id": 5,
+		"helpTitle": "Indigenous heritage",
+		"helpContent": "<p>Certain forms of Indigenous heritage are not protected:</p><ul><li>objects with archaeological, scientific or historical interests</li><li>contemporary art</li><li>natural & intangible heritage</li></ul>",
+		"summary": "<p>Indigenous Australians can apply for a declaration under the Aboriginal and Torres Strait Islander Heritage Protection Act 1984 to protect significant Indigenous areas and objects. Declarations are rarely made but can override project approvals.</p><p>State and Territories may also have their own jurisdictional Indigenous Heritage regulations.</p>",
+		"pdf": "dummy.pdf",
+		"pdfDescription": "<em>The Aboriginal & Torres Strait Islander Heritage Protection Act 1984</em>"
+	}]
+}

@@ -1,32 +1,32 @@
 { "Pages": [
 	{
-		"id": "01",
+		"id": "1",
 		"title": "Question 1",
 		"question": "Will your project involve foreign investors?",
-		"next": "02"
+		"next": "2"
 	},
 	{ 
-		"id": "02",
+		"id": "2",
 		"title": "Question 2",
 		"question": "Will your project involve capital expenditure over AUD $500 million?",
-		"next": "03"
+		"next": "3"
 	},{ 
-		"id": "03",
+		"id": "3",
 		"title": "Question 3",
 		"question": "Will your project employ foreign workers?",
-		"next": "04"
+		"next": "4"
 	},{ 
-		"id": "04",
+		"id": "4",
 		"title": "Question 4",
 		"question": "Will your project impact in areas held by Native Title?",
-		"next": "05"
+		"next": "5"
 	},{ 
-		"id": "05",
+		"id": "5",
 		"title": "Question 5",
 		"question": "Will your project effect areas or objects significant to Indigenous Heritage?",
-		"next": "06"
+		"next": "6"
 	},{ 
-		"id": "06",
+		"id": "6",
 		"title": "Question 6",
 		"question": "Where will your project take place?",
 		"next": "final"
