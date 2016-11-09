@@ -3,27 +3,40 @@ require 'json'
 module Jekyll
 
   class QuestionPage < Page
-    def initialize(site, base, dir, pagedef, content)
+    def initialize(site, base, dir, pagedef, questions)
       @site = site
       @base = base
       @dir = dir
 	  id = pagedef['id']
-	  id = id.rjust(2, '0')
+	  id = id.to_s().rjust(2, '0')
       @name = "question-#{id}.html"
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'question.html')
 	  self.data['id'] = pagedef['id']
       self.data['title'] = pagedef['title']
-	  self.data['question'] = pagedef['question']
-	  self.data['next'] = "#{site.baseurl}/summary.html" if (pagedef['next'] == "final")
-	  self.data['next'] = "question-#{pagedef['next'].rjust(2, '0')}.html" if (pagedef['next'] != "final")
-	  self.data['summary'] = content['summary']
-	  self.data['pdf'] = content['pdf']
-	  self.data['pdfDescription'] = content['pdfDescription']
-	  self.data['helpTitle'] = content['helpTitle']
-	  self.data['helpContent'] = content['helpContent']
+	  self.data['questions'] = questions
+	  self.data['next'] = pagedef['next']
     end
+  end
+  
+  class NavigationPage < Page
+	def initialize(site, base, dir, pagedef, question, content)
+	  @site = site
+      @base = base
+      @dir = dir
+	  id = pagedef['id']
+	  id = id.to_s().rjust(2, '0')
+      @name = "question-#{id}.html"
+
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'navigation.html')
+	  self.data['id'] = pagedef['id']
+      self.data['title'] = pagedef['title']
+	  self.data['question'] = question
+	  self.data['content'] = content
+	  self.data['navigation'] = pagedef['nav']
+	end
   end
   
   class SummaryPage < Page
@@ -52,28 +65,55 @@ module Jekyll
       end
       puts "## Pages file read: found #{pages.length} pages"
 	  
+	  json_filename = 'questions.json'
+      data_hash = site.read_data_object( json_filename ) # if File.exists?( json_filename )
+      # json_mtime = data_hash['mtime'] if data_hash
+      data = data_hash['data'] if data_hash
+      questions = data['Questions'] if data
+	  hshQuestion = HashFromData(questions)
+      unless questions
+        return "No data found in data file"
+      end
+      puts "## Questions file read: found #{questions.length} questions"
+	  
 	  json_filename = 'content.json'
       data_hash = site.read_data_object( json_filename ) # if File.exists?( json_filename )
       # json_mtime = data_hash['mtime'] if data_hash
       data = data_hash['data'] if data_hash
       content = data['Content'] if data
-      unless pages
+	  hshContent = HashFromData(content)
+      unless content
         return "No data found in data file"
       end
-      puts "## Content file read: found content for #{content.length} pages"
+      puts "## Content file read: found content for #{content.length} questions"
 
 	  # build question pages:
 	  pages.each_with_index do |pagedef,index|
-		if content[index] != nil
-			site.pages << QuestionPage.new(site, site.source, "questions", pagedef, content[index])
+		arrQuestions = Array.new
+		arrContent = Array.new
+		pagedef['questions'].each_with_index do |qID, ind|
+			qest = hshQuestion[qID]
+			qest['content'] = hshContent[qID]
+			arrQuestions.push(qest)
+		end
+		if pagedef['next'] != nil
+			site.pages << QuestionPage.new(site, site.source, "questions", pagedef, arrQuestions)
 		else
-			site.pages << QuestionPage.new(site, site.source, "questions", pagedef, "")
+			site.pages << NavigationPage.new(site, site.source, "questions", pagedef, arrQuestions[0], arrContent[0])
 		end
 	  end
 	  
 	  # build summary page:
 	  site.pages << SummaryPage.new(site, site.source, content)
     end
+	
+	def HashFromData(data)
+		hash = Array.new
+		data.each_with_index do |elt, index|
+			hash[elt['id']] = elt
+		end
+		return hash
+	end
   end
 	
   class Site
@@ -96,7 +136,6 @@ module Jekyll
 		result = File.read( filename )
       end
       puts "## Error: No data in #{file}" if result.nil?
-      # puts result
 
       result = JSON.parse( result ) if result
       { 'data' => result,
