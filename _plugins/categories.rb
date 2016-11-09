@@ -3,7 +3,7 @@ require 'json'
 module Jekyll
 
   class QuestionPage < Page
-    def initialize(site, base, dir, pagedef, questions)
+    def initialize(site, base, dir, pagedef, questions, maxpath)
       @site = site
       @base = base
       @dir = dir
@@ -17,11 +17,12 @@ module Jekyll
       self.data['title'] = pagedef['title']
 	  self.data['questions'] = questions
 	  self.data['next'] = pagedef['next']
+	  self.data['percentage'] = (maxpath - pagedef['stepstoend']) * 100 / maxpath + 1
     end
   end
   
   class NavigationPage < Page
-	def initialize(site, base, dir, pagedef, question, content)
+	def initialize(site, base, dir, pagedef, question, content, maxpath)
 	  @site = site
       @base = base
       @dir = dir
@@ -36,6 +37,7 @@ module Jekyll
 	  self.data['question'] = question
 	  self.data['content'] = content
 	  self.data['navigation'] = pagedef['nav']
+	  self.data['percentage'] = (maxpath - pagedef['stepstoend']) * 100 / maxpath + 1
 	end
   end
   
@@ -60,6 +62,7 @@ module Jekyll
       # json_mtime = data_hash['mtime'] if data_hash
       data = data_hash['data'] if data_hash
       pages = data['Pages'] if data
+	  hshPages = HashFromData(pages)
       unless pages
         return "No data found in data file"
       end
@@ -88,7 +91,10 @@ module Jekyll
       puts "## Content file read: found content for #{content.length} questions"
 
 	  # build question pages:
+	  maxpath = LongestPath(1, hshPages)
+	  puts "max: #{maxpath}"
 	  pages.each_with_index do |pagedef,index|
+		pagedef['stepstoend'] = LongestPath(pagedef['id'], hshPages)
 		arrQuestions = Array.new
 		arrContent = Array.new
 		pagedef['questions'].each_with_index do |qID, ind|
@@ -97,9 +103,9 @@ module Jekyll
 			arrQuestions.push(qest)
 		end
 		if pagedef['next'] != nil
-			site.pages << QuestionPage.new(site, site.source, "questions", pagedef, arrQuestions)
+			site.pages << QuestionPage.new(site, site.source, "questions", pagedef, arrQuestions, maxpath)
 		else
-			site.pages << NavigationPage.new(site, site.source, "questions", pagedef, arrQuestions[0], arrContent[0])
+			site.pages << NavigationPage.new(site, site.source, "questions", pagedef, arrQuestions[0], arrContent[0], maxpath)
 		end
 	  end
 	  
@@ -113,6 +119,18 @@ module Jekyll
 			hash[elt['id']] = elt
 		end
 		return hash
+	end
+	
+	def LongestPath(id, pages)
+		return 0 if id == "final"
+		return 1 if pages[id]['next'] == "final"
+		return 1 + LongestPath(pages[id]['next'], pages) if pages[id]['next'] != nil
+
+		paths = Array.new
+		pages[id]['nav'].each do |str, val|
+			paths.push(1 + LongestPath(val, pages))
+		end
+		return paths.max
 	end
   end
 	
