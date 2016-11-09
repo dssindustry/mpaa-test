@@ -6,8 +6,12 @@ layout: default
 <script>
 	var pageID = {{ page.id }};
 </script>
+<p class="meter-description"><strong>Questions:</strong> <span id="percentCompleted">{{ page.percentage }}</span>% complete</p>
+<div class="meter">
+	<span id="percentMeter" style="width: {{ page.percentage }}%;"></span>
+</div><!-- meter -->
 <div class="row">
-  <h2>{{ page.title }}</h2>
+  <h1>{{ page.title }}</h1>
   <div class="grid-row">
 	<fieldset>
 		<legend class="col6">{{ page.question['question'] }}</legend>
