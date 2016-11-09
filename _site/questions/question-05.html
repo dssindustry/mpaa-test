@@ -24,41 +24,49 @@
 <script type="text/javascript" src="/mpaa-test/scripts/jquery.collapse-help-me-decide.js"></script>
 <script>
 	var pageID = 5;
-	var next = "question-06.html";
+	var next = "6";
 </script>
 <div class="row">
-  <h2>Question 5</h2>
-  <div class="grid-row">
-	<fieldset>
+  <h2>Page 5</h2>
+  
+  <div class="grid-row grid-row-block">
+	<fieldset class="no-margin">
 		<legend class="col6">Will your project effect areas or objects significant to Indigenous Heritage?</legend>
 		<div class="radio-toggle col5">
-			<label class="label-left" for="answer-yes">
-				<input id="answer-yes" type="radio" value="336" name="answer">
-				<span>Yes</span>
-			</label>
-			<label class="label-right" for="answer-no">
-				<input id="answer-no" type="radio" value="337" name="answer">
-				<span>No </span>
-			</label>
+			
+				<label class="label-left" for="answer5-yes">
+					<input id="answer5-yes" type="radio" value="Yes" name="answer5">
+					<span>Yes</span>
+				</label>
+			
+				<label class="label-right" for="answer5-no">
+					<input id="answer5-no" type="radio" value="No" name="answer5">
+					<span>No</span>
+				</label>
+			
 		</div>
+		
 		<div class="col1 last">
-			<a href="#help-anchor" id="helplink" class="cd-btn help"><span>help</span></a>
+			<a href="#help-anchor-5" id="helplink-5" class="cd-btn help"><span>help</span></a>
 		</div>
+		
 	</fieldset>
-  </div>
   
-  <div id="summary" class="grid-row" style="display: none;">
+  <div id="summary-5" class="grid-row" style="display: none;">
 	<div class="registration-tip">
 		<p>Indigenous Australians can apply for a declaration under the Aboriginal and Torres Strait Islander Heritage Protection Act 1984 to protect significant Indigenous areas and objects. Declarations are rarely made but can override project approvals.</p><p>State and Territories may also have their own jurisdictional Indigenous Heritage regulations.</p>
 		
-			<p>For more information, see the <a href="/mpaa-test/pdf/dummy.pdf">MPAA Factsheet: </a></p>
+			<p>For more information, see the <a href="/mpaa-test/pdf/dummy.pdf">MPAA Fact Sheet: <em>The Aboriginal & Torres Strait Islander Heritage Protection Act 1984</em></a>.</p>
 		
 	</div>
   </div>
   
+  </div>
+
+  
 	<div class="controls-container">
 		<div class="controls-content">
-			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();">Next</button>
+			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();" disabled>Next</button>
 		</div><!-- controls-content -->
 	</div>
   
@@ -72,9 +80,11 @@
 		<div class="cd-panel-container">
 			<div class="cd-panel-content">
 				<div id="helpFile" class="showhide">
-					<input type="hidden" class="help-anchor" id="help-anchor" />
+				
+					<input type="hidden" class="help-anchor" id="help-anchor-5" />
 					<h3>Indigenous heritage</h3>
 					<div><p>Certain forms of Indigenous heritage are not protected:</p><ul><li>objects with archaeological, scientific or historical interests</li><li>contemporary art</li><li>natural & intangible heritage</li></ul></div>
+				
 				</div><!-- showhide -->
 			</div><!-- cd-panel-content -->
 		</div><!-- cd-panel-container -->
