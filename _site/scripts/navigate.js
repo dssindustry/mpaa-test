@@ -32,12 +32,14 @@ $(document).ready(function() {
 
 function goNext() {
 	var next = $("[name=answer]:checked").val();
+	var option, url;
 	if (next === "final") {
-		next = "../summary.html"
+		url = "../summary.html"
+		option = $("[name=answer]:checked").parent().find("span").html();
 	}
 	else
 	{
-		next = "question-" + (next<10?0:"") + next + ".html";
+		url = "question-" + (next<10?0:"") + next + ".html";
 	}
-	location.href = next + "?s=" + status;
+	location.href = url + "?s=" + status + (next==="final"?encodeURI("&detail=" + option):"");
 }
