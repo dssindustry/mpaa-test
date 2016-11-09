@@ -9,37 +9,40 @@ layout: default
 </script>
 <div class="row">
   <h2>{{ page.title }}</h2>
-  <div class="grid-row">
-	<fieldset>
-		<legend class="col6">{{ page.question }}</legend>
+  {% for question in page.questions %}
+  <div class="grid-row grid-row-block">
+	<fieldset class="no-margin">
+		<legend class="col6">{{ question['question'] }}</legend>
 		<div class="radio-toggle col5">
-			<label class="label-left" for="answer-yes">
-				<input id="answer-yes" type="radio" value="336" name="answer">
-				<span>Yes</span>
-			</label>
-			<label class="label-right" for="answer-no">
-				<input id="answer-no" type="radio" value="337" name="answer">
-				<span>No </span>
-			</label>
+			{% for ans in question.answers %}
+				<label class="label{% if forloop.first %}-left{% elsif forloop.last %}-right{% else %}-middle{% endif %}" for="answer{{question['id']}}-{{ans | downcase | replace: " ", "-" }}">
+					<input id="answer{{question['id']}}-{{ans | downcase | replace: " ", "-" }}" type="radio" value="{{ans}}" name="answer{{question['id']}}">
+					<span>{{ans}}</span>
+				</label>
+			{% endfor %}
 		</div>
+		{% if question.content['helpContent'] != "" %}
 		<div class="col1 last">
-			<a href="#help-anchor" id="helplink" class="cd-btn help"><span>help</span></a>
+			<a href="#help-anchor-{{question['id']}}" id="helplink-{{question['id']}}" class="cd-btn help"><span>help</span></a>
 		</div>
+		{% endif %}
 	</fieldset>
-  </div>
-  {% if page.summary != "" %}
-  <div id="summary" class="grid-row" style="display: none;">
+  {% if question.content != "" %}
+  <div id="summary-{{question['id']}}" class="grid-row" style="display: none;">
 	<div class="registration-tip">
-		{{ page.summary }}
-		{% if page.pdf != "" %}
-			<p>For more information, see the <a href="{{site.baseurl}}/pdf/{{page.pdf}}">MPAA Factsheet: {{page.description}}</a></p>
+		{{ question.content['summary'] }}
+		{% if question.content['pdf'] != "" %}
+			<p>For more information, see the <a href="{{site.baseurl}}/pdf/{{question.content['pdf']}}">{{question.content['pdfDescription']}}</a>.</p>
 		{% endif %}
 	</div>
   </div>
   {% endif %}
+  </div>
+
+  {% endfor %}
 	<div class="controls-container">
 		<div class="controls-content">
-			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();">Next</button>
+			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();" disabled>Next</button>
 		</div><!-- controls-content -->
 	</div>
   {% if page.helpContent != "" %}
@@ -53,9 +56,11 @@ layout: default
 		<div class="cd-panel-container">
 			<div class="cd-panel-content">
 				<div id="helpFile" class="showhide">
-					<input type="hidden" class="help-anchor" id="help-anchor" />
-					<h3>{{page.helpTitle}}</h3>
-					<div>{{page.helpContent}}</div>
+				{% for question in page.questions %}
+					<input type="hidden" class="help-anchor" id="help-anchor-{{question['id']}}" />
+					<h3>{{question.content['helpTitle']}}</h3>
+					<div>{{question.content['helpContent']}}</div>
+				{% endfor %}
 				</div><!-- showhide -->
 			</div><!-- cd-panel-content -->
 		</div><!-- cd-panel-container -->

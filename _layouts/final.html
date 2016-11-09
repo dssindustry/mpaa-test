@@ -21,7 +21,7 @@ layout: fullwidth
 		</thead>
 		<tbody>
 			{% for item in page.contentitems %}
-			<tr>
+			<tr id="row-{{item['id']}}" style="display: none">
 				<td valign="top" class="registration-type">
 					<p>
 						<input id="cb{{item['id']}}" type="checkbox" checked="checked">
@@ -31,7 +31,7 @@ layout: fullwidth
 				<td valign="top">{{item['summary']}}</td>
 				<td valign="top">
 				{% if item['pdf'] != "" %}
-					<p><a href="{{site.baseurl}}/pdfs/{{item['pdf']}}">MPAA Fact Sheet: {{item['pdfDescription']}}</a></p>
+					<p><a href="{{site.baseurl}}/pdfs/{{item['pdf']}}">{{item['pdfDescription']}}</a>.</p>
 				{% endif %}
 				</td>
 				<td valign="top" class="help">
@@ -74,7 +74,7 @@ layout: fullwidth
 				<div id="helpFile" class="showhide">
 				{% for item in page.contentitems %}
 					<input type="hidden" class="help-anchor" id="help-anchor{{item['id']}}" />
-					<h3>{{item['helpTitle']}}</h3>
+					<h3 id="help-{{item['id']}}" style="display: none">{{item['helpTitle']}}</h3>
 					<div>{{item['helpContent']}}</div>
 				{% endfor %}
 				</div><!-- showhide -->

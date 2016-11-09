@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<script type="text/javascript" src="{{site.baseurl}}/scripts/navigate.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/scripts/jquery.collapse-help-me-decide.js"></script>
+<script>
+	var pageID = {{ page.id }};
+</script>
+<div class="row">
+  <h2>{{ page.title }}</h2>
+  <div class="grid-row">
+	<fieldset>
+		<legend class="col6">{{ page.question['question'] }}</legend>
+		<div class="radio-toggle stacked col5">
+			{% for ans in page.question['answers'] %}
+				<label class="label{% if forloop.first %}-left{% elsif forloop.last %}-right{% else %}-middle{% endif %}" for="answer-{{ans | downcase | replace: " ", "-" }}">
+					<input id="answer-{{ans | downcase | replace: " ", "-" }}" type="radio" value="{{page.navigation[ans]}}" name="answer">
+					<span>{{ans}}</span>
+				</label>
+			{% endfor %}
+		</div>
+		<div class="col1 last">
+			<a href="#help-anchor" id="helplink" class="cd-btn help"><span>help</span></a>
+		</div>
+	</fieldset>
+  </div>
+  {% if page.summary != "" %}
+  <div id="summary" class="grid-row" style="display: none;">
+	<div class="registration-tip">
+		{{ page.summary }}
+		{% if page.pdf != "" %}
+			<p>For more information, see the <a href="{{site.baseurl}}/pdf/{{page.pdf}}">{{page.pdfDescription}}</a>.</p>
+		{% endif %}
+	</div>
+  </div>
+  {% endif %}
+	<div class="controls-container">
+		<div class="controls-content">
+			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();" disabled>Next</button>
+		</div><!-- controls-content -->
+	</div>
+  {% if page.helpContent != "" %}
+  <div class="help" id="help">
+	<div class="cd-panel from-right">
+		<div class="cd-panel-header">
+			<a href="#" class="cd-panel-close">Close</a>
+			<h2 id="helpTopic">Help topics</h2>
+			<p class="cd-panel-print"><a href="#" id="aPrint" onclick="printHelp(); return false;">Print</a></p>
+		</div>
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<div id="helpFile" class="showhide">
+					<input type="hidden" class="help-anchor" id="help-anchor" />
+					<h3>{{page.helpTitle}}</h3>
+					<div>{{page.helpContent}}</div>
+				</div><!-- showhide -->
+			</div><!-- cd-panel-content -->
+		</div><!-- cd-panel-container -->
+	</div><!-- cd-panel -->
+  </div>
+  {% endif %}
+</div>
