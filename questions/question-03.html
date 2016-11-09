@@ -24,41 +24,49 @@
 <script type="text/javascript" src="/mpaa-test/scripts/jquery.collapse-help-me-decide.js"></script>
 <script>
 	var pageID = 3;
-	var next = "question-04.html";
+	var next = "4";
 </script>
 <div class="row">
-  <h2>Question 3</h2>
-  <div class="grid-row">
-	<fieldset>
+  <h2>Page 3</h2>
+  
+  <div class="grid-row grid-row-block">
+	<fieldset class="no-margin">
 		<legend class="col6">Will your project employ foreign workers?</legend>
 		<div class="radio-toggle col5">
-			<label class="label-left" for="answer-yes">
-				<input id="answer-yes" type="radio" value="336" name="answer">
-				<span>Yes</span>
-			</label>
-			<label class="label-right" for="answer-no">
-				<input id="answer-no" type="radio" value="337" name="answer">
-				<span>No </span>
-			</label>
+			
+				<label class="label-left" for="answer3-yes">
+					<input id="answer3-yes" type="radio" value="Yes" name="answer3">
+					<span>Yes</span>
+				</label>
+			
+				<label class="label-right" for="answer3-no">
+					<input id="answer3-no" type="radio" value="No" name="answer3">
+					<span>No</span>
+				</label>
+			
 		</div>
+		
 		<div class="col1 last">
-			<a href="#help-anchor" id="helplink" class="cd-btn help"><span>help</span></a>
+			<a href="#help-anchor-3" id="helplink-3" class="cd-btn help"><span>help</span></a>
 		</div>
+		
 	</fieldset>
-  </div>
   
-  <div id="summary" class="grid-row" style="display: none;">
+  <div id="summary-3" class="grid-row" style="display: none;">
 	<div class="registration-tip">
 		<p>All foreign workers require the appropriate visa that allows them to work in Australia and in Commonwealth waters under the Migration Act 1958.</p>
 		
-			<p>For more information, see the <a href="/mpaa-test/pdf/dummy.pdf">MPAA Factsheet: </a></p>
+			<p>For more information, see the <a href="/mpaa-test/pdf/dummy.pdf">MPAA Fact Sheet: <em>Migration Act 1958</em></a>.</p>
 		
 	</div>
   </div>
   
+  </div>
+
+  
 	<div class="controls-container">
 		<div class="controls-content">
-			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();">Next</button>
+			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();" disabled>Next</button>
 		</div><!-- controls-content -->
 	</div>
   
@@ -72,9 +80,11 @@
 		<div class="cd-panel-container">
 			<div class="cd-panel-content">
 				<div id="helpFile" class="showhide">
-					<input type="hidden" class="help-anchor" id="help-anchor" />
+				
+					<input type="hidden" class="help-anchor" id="help-anchor-3" />
 					<h3>Foreign workers</h3>
 					<div><p>Foreign workers are employees from another country without:</p><ul><li>Australian citizenship</li><li>New Zealand citizenship</li><li>Australian permanent residence</li></ul></div>
+				
 				</div><!-- showhide -->
 			</div><!-- cd-panel-content -->
 		</div><!-- cd-panel-container -->

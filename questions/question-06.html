@@ -20,26 +20,33 @@
 		<div class="gov"><a href="http://www.business.gov.au"><span>business.gov.au</span></a></div>
 	</header>
 	<main class="wrapper">
-		<script type="text/javascript" src="/mpaa-test/scripts/track.js"></script>
+		<script type="text/javascript" src="/mpaa-test/scripts/navigate.js"></script>
 <script type="text/javascript" src="/mpaa-test/scripts/jquery.collapse-help-me-decide.js"></script>
 <script>
 	var pageID = 6;
-	var next = "/mpaa-test/summary.html";
 </script>
 <div class="row">
-  <h2>Question 6</h2>
+  <h2>Page 6</h2>
   <div class="grid-row">
 	<fieldset>
 		<legend class="col6">Where will your project take place?</legend>
-		<div class="radio-toggle col5">
-			<label class="label-left" for="answer-yes">
-				<input id="answer-yes" type="radio" value="336" name="answer">
-				<span>Yes</span>
-			</label>
-			<label class="label-right" for="answer-no">
-				<input id="answer-no" type="radio" value="337" name="answer">
-				<span>No </span>
-			</label>
+		<div class="radio-toggle stacked col5">
+			
+				<label class="label-left" for="answer-land">
+					<input id="answer-land" type="radio" value="7" name="answer">
+					<span>Land</span>
+				</label>
+			
+				<label class="label-middle" for="answer-sea">
+					<input id="answer-sea" type="radio" value="14" name="answer">
+					<span>Sea</span>
+				</label>
+			
+				<label class="label-right" for="answer-both">
+					<input id="answer-both" type="radio" value="24" name="answer">
+					<span>Both</span>
+				</label>
+			
 		</div>
 		<div class="col1 last">
 			<a href="#help-anchor" id="helplink" class="cd-btn help"><span>help</span></a>
@@ -51,14 +58,14 @@
 	<div class="registration-tip">
 		
 		
-			<p>For more information, see the <a href="/mpaa-test/pdf/">MPAA Factsheet: </a></p>
+			<p>For more information, see the <a href="/mpaa-test/pdf/"></a>.</p>
 		
 	</div>
   </div>
   
 	<div class="controls-container">
 		<div class="controls-content">
-			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();">Next</button>
+			<button type="button" class="btn btn-default" id="btnContinue" onclick="goNext();" disabled>Next</button>
 		</div><!-- controls-content -->
 	</div>
   
