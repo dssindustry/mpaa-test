@@ -1,34 +1,227 @@
 { "Pages": [
 	{
-		"id": "1",
-		"title": "Question 1",
-		"question": "Will your project involve foreign investors?",
-		"next": "2"
+		"id": 1,
+		"title": "Page 1",
+		"questions": [1],
+		"next": 2
 	},
-	{ 
-		"id": "2",
-		"title": "Question 2",
-		"question": "Will your project involve capital expenditure over AUD $500 million?",
-		"next": "3"
-	},{ 
-		"id": "3",
-		"title": "Question 3",
-		"question": "Will your project employ foreign workers?",
-		"next": "4"
-	},{ 
-		"id": "4",
-		"title": "Question 4",
-		"question": "Will your project impact in areas held by Native Title?",
-		"next": "5"
-	},{ 
-		"id": "5",
-		"title": "Question 5",
-		"question": "Will your project effect areas or objects significant to Indigenous Heritage?",
-		"next": "6"
-	},{ 
-		"id": "6",
-		"title": "Question 6",
-		"question": "Where will your project take place?",
-		"next": "final"
+	{
+		"id": 2,
+		"title": "Page 2",
+		"questions": [2],
+		"next": 3
+	},
+	{
+		"id": 3,
+		"title": "Page 3",
+		"questions": [3],
+		"next": 4
+	},
+	{
+		"id": 4,
+		"title": "Page 4",
+		"questions": [4],
+		"next": 5
+	},
+	{
+		"id": 5,
+		"title": "Page 5",
+		"questions": [5],
+		"next": 6
+	},
+	{
+		"id": 6,
+		"title": "Page 6",
+		"questions": [6],
+		"nav": {
+			"Land": 7,
+			"Sea": 14,
+			"Both": 24
+		}
+	},
+	{
+		"id": 7,
+		"title": "Page 7",
+		"questions": [7],
+		"next": 8
+	},
+	{
+		"id": 8,
+		"title": "Page 8",
+		"questions": [8,9,10,11,12],
+		"next": 9
+	},
+	{
+		"id": 9,
+		"title": "Page 9",
+		"questions": [13],
+		"next": 10
+	},
+	{
+		"id": 10,
+		"title": "Page 10",
+		"questions": [14],
+		"next": 11
+	},
+	{
+		"id": 11,
+		"title": "Page 11",
+		"questions": [15,16,17],
+		"next": 12
+	},
+	{
+		"id": 12,
+		"title": "Page 12",
+		"questions": [18],
+		"next": 13
+	},
+	{
+		"id": 13,
+		"title": "Page 13",
+		"questions": [19],
+		"nav": {
+			"Northern Territory": "final",
+			"Tasmania": "final"
+		}
+	},
+	{
+		"id": 14,
+		"title": "Page 14",
+		"questions": [7],
+		"next": 15
+	},
+	{
+		"id": 15,
+		"title": "Page 15",
+		"questions": [20],
+		"next": 16
+	},
+	{
+		"id": 16,
+		"title": "Page 16",
+		"questions": [21],
+		"next": 17
+	},
+	{
+		"id": 17,
+		"title": "Page 17",
+		"questions": [8,9,10,11,12],
+		"next": 18
+	},
+	{
+		"id": 18,
+		"title": "Page 18",
+		"questions": [13],
+		"next": 19
+	},
+	{
+		"id": 19,
+		"title": "Page 19",
+		"questions": [14],
+		"next": 20
+	},
+	{
+		"id": 20,
+		"title": "Page 20",
+		"questions": [22,23,24,25,26,27],
+		"next": 21
+	},
+	{
+		"id": 21,
+		"title": "Page 21",
+		"questions": [28,29,30],
+		"next": 22
+	},
+	{
+		"id": 22,
+		"title": "Page 22",
+		"questions": [31],
+		"next": 23
+	},
+	{
+		"id": 23,
+		"title": "Page 23",
+		"questions": [32],
+		"nav": {
+			"Northern Territory": "final",
+			"Tasmania": "final",
+			"Commonwealth Waters": "final"
+		}
+	},
+	{
+		"id": 24,
+		"title": "Page 24",
+		"questions": [7],
+		"next": 25
+	},
+	{
+		"id": 25,
+		"title": "Page 25",
+		"questions": [20],
+		"next": 26
+	},
+	{
+		"id": 26,
+		"title": "Page 26",
+		"questions": [21],
+		"next": 27
+	},
+	{
+		"id": 27,
+		"title": "Page 27",
+		"questions": [8,9,10,11,12],
+		"next": 28
+	},
+	{
+		"id": 28,
+		"title": "Page 28",
+		"questions": [13],
+		"next": 29
+	},
+	{
+		"id": 29,
+		"title": "Page 29",
+		"questions": [14],
+		"next": 30
+	},
+	{
+		"id": 30,
+		"title": "Page 30",
+		"questions": [15,16,17],
+		"next": 31
+	},
+	{
+		"id": 32,
+		"title": "Page 32",
+		"questions": [18],
+		"next": 33
+	},
+	{
+		"id": 33,
+		"title": "Page 33",
+		"questions": [22,23,24,25,26,27],
+		"next": 34
+	},
+	{
+		"id": 35,
+		"title": "Page 35",
+		"questions": [28,29,30],
+		"next": 36
+	},
+	{
+		"id": 36,
+		"title": "Page 36",
+		"questions": [31],
+		"next": 37
+	},
+	{
+		"id": 37,
+		"title": "Page 37",
+		"questions": [32],
+		"nav": {
+			"Northern Territory": "final",
+			"Tasmania": "final",
+			"Commonwealth Waters": "final"
+		}
 	}]
 }

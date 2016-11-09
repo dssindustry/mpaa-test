@@ -1,0 +1,132 @@
+{ "Questions": [
+	{
+		"id": 1,
+		"question": "Will your project involve foreign investors?",
+		"answers": ["Yes","No"]
+	},
+	{ 
+		"id": 2,
+		"question": "Will your project involve capital expenditure over AUD $500 million?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 3,
+		"question": "Will your project employ foreign workers?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 4,
+		"question": "Will your project impact in areas held by Native Title?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 5,
+		"question": "Will your project effect areas or objects significant to Indigenous Heritage?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 6,
+		"question": "Where will your project take place?",
+		"answers": ["Land","Sea","Both"]
+	},{ 
+		"id": 7,
+		"question": "Will you project have a significant impact on the environment?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 8,
+		"question": "Will your project involve the import or export of goods?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 9,
+		"question": "Will your imports or conveyances pose a biosecurity risk?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 10,
+		"question": "Will you be importing goods destined to become food products for animal or human consumption?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 11,
+		"question": "Will you be exporting prescribed goods?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 12,
+		"question": "Will you be importing or exporting cultural objects?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 13,
+		"question": "Will your project involve activities with radioactive materials?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 14,
+		"question": "Will your project emit large amounts of greenhouse gases or consume large amounts of energy?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 15,
+		"question": "Will your project be located around federally leased airports?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 16,
+		"question": "Will your project involve building or construction activities within an airport?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 17,
+		"question": "Will your project impact the airspace within a 20km radius of an airport?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 18,
+		"question": "Will your project involve heavy vehicles on roads?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 19,
+		"question": "Where is your project located?",
+		"answers": ["Northern Territory","Tasmania"]
+	},{ 
+		"id": 20,
+		"question": "Will your project involve the disposal or abandonment of waste and other matter at sea?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 21,
+		"question": "Will your project disturb the protected zone around registered shipwrecks?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 22,
+		"question": "Will your project involve operating a vessel at sea?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 23,
+		"question": "Will your project operate an international ship?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 24,
+		"question": "Will your project operate a domestic commercial vessel in Australian waters?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 25,
+		"question": "Will your ship transport cargo or passengers between ports in Australia?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 26,
+		"question": "Will your project involve fishing activities?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 27,
+		"question": "Will your vessel be a large oil tanker or ship?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 28,
+		"question": "Will your project involve exploring, developing or producing offshore resources?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 29,
+		"question": "Will your project involve petroleum activities in Australian waters?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 30,
+		"question": "Will your project involve mineral mining activities in Australian waters?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 31,
+		"question": "Will your project disturb the protected zone around submarine cables?",
+		"answers": ["Yes","No"]
+	},{ 
+		"id": 32,
+		"question": "Where is your project located?",
+		"answers": ["Northern Territory","Tasmania","Commonwealth Waters"]
+	}]
+}
