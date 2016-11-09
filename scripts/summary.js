@@ -1,5 +1,9 @@
 var status = 0;
 
+Math.log2 = Math.log2 || function(x) {
+	return Math.log(x) * Math.LOG2E;
+};
+
 $(document).ready(function() {
 	var param = getURLParameter("s");
 	if (param != null) {
